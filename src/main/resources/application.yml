@@ -1,0 +1,17 @@
+server:
+  port: 10032
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/hua_food_order?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: 123456
+      initial-size: 10
+      min-idle: 10
+      max-active: 50
+      test-on-return: false
+      test-while-idle: true
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*Dao.xml
+
